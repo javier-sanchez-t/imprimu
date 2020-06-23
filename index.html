@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Imprimu</title>
+
+ <!--JQUERY-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <!--FONT-->
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet">
+
+ <!--BULMA-->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+ <!--CUSTOM CSS-->
+ <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+
+
+ <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+   <a class="navbar-item">
+    <img src="./images/imprimulogo.png" width="100">
+   </a>
+
+   <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+    data-target="navbarBasicExample">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+   </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+   <div class="navbar-start">
+    <div class="navbar-item has-dropdown is-hoverable">
+     <a class="navbar-link">
+      Products
+     </a>
+
+     <div class="navbar-dropdown">
+      <a class="navbar-item">
+       Product 1
+      </a>
+      <a class="navbar-item">
+       Product 2
+      </a>
+      <a class="navbar-item">
+       Product 3
+      </a>
+     </div>
+    </div>
+
+    <a class="navbar-item">
+     About Us
+    </a>
+    <a class="navbar-item">
+     Sign up
+    </a>
+    <a class="navbar-item">
+     Sign up
+    </a>
+   </div>
+
+   <div class="navbar-end">
+    <div class="navbar-item">
+     <div class="buttons">
+      <a class="button is-light">
+       Log in
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </nav>
+
+
+
+ <!--HEADER-->
+ <div class="container is-fullhd header">
+  <div class="columns is-mobile is-multiline is-vcentered">
+   <div class="column center column is-half-mobile is-half-tablet headerColumns">
+    <img src="./images/father.png" alt="Father" width="400">
+   </div>
+   <div class="column column is-half-mobile is-half-tablet">
+    <div>
+     <img src="./images/happy.png" alt="Gift" width="450">
+    </div>
+   </div>
+  </div>
+ </div>
+
+
+ <section class="section">
+  <div class="container blueTitle center">
+   <h2>
+    Select your gift!
+   </h2>
+  </div>
+
+  <!-- PRODUCTS-->
+  <div class="container">
+   <div class="columns is-half-tablet is-half-desktop">
+    <div class="column center">
+     <a
+      onclick="launchModal('modal-product', 'Product 1', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')">
+      <img src="./images/product_1.png" alt="Product 1" class="w100pct">
+     </a>
+    </div>
+    <div class="column center">
+     <a
+      onclick="launchModal('modal-product', 'Product 2', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')">
+      <img src="./images/Product_2.png" alt="Product 2" class="w100pct">
+     </a>
+    </div>
+    <div class="column center">
+     <a
+      onclick="launchModal('modal-product', 'Product 3', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')">
+      <img src="./images/Product_3.png" alt="Product 3" class="w100pct">
+     </a>
+    </div>
+   </div>
+
+   <div class="columns is-half-tablet is-half-desktop">
+    <div class="column center">
+     <a
+      onclick="launchModal('modal-product', 'Product 4', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')">
+      <img src="./images/product_4.png" alt="Product 4" class="w100pct">
+     </a>
+    </div>
+    <div class="column center">
+     <a
+      onclick="launchModal('modal-product', 'Product 5', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')">
+      <img src="./images/Product_5.png" alt="Product 5" class="w100pct">
+     </a>
+    </div>
+    <div class="column center">
+     <a
+      onclick="launchModal('modal-product', 'Product 6', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')">
+      <img src="./images/Product_6.png" alt="Product 6" class="w100pct">
+     </a>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!--MODAL FOR PRODUCTS-->
+ <div id="modal-product" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+   <header class="modal-card-head">
+    <p class="modal-card-title" id="modalTitle"></p>
+    <button class="delete" aria-label="close" onclick="closeModal('modal-product')"></button>
+   </header>
+   <section class="modal-card-body">
+    <div class="content" id="modalDescription">
+
+    </div>
+   </section>
+   <footer class="modal-card-foot">
+    <button class="button is-danger" onclick="closeModal('modal-product')">Close</button>
+   </footer>
+  </div>
+ </div>
+
+
+ <!--ABOUT US-->
+ <div class="container is-fluid aqua marginT100 marginB100">
+  <div class="columns is-half-tablet is-half-desktop">
+   <div class="column aboutUs">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+     magna aliqua</p>
+    <br><br>
+    <button class="button is-black btn-about-us">Learn more</button>
+   </div>
+   <div class="column facil">
+    <img src="./images/facil.png" alt="Fácil rápido y en línea">
+   </div>
+  </div>
+ </div>
+
+
+ <!--HOW IT WORKS-->
+ <section class="section">
+  <div class="container howTitle center">
+   <h2>
+    How it works
+   </h2>
+  </div>
+ </section>
+ <!-- ICONS-->
+ <div class="container is-fullhd icons">
+
+  <div class="columns is-mobile is-multiline">
+   <div class="column center column is-half-mobile  is-one-quarter-tablet">
+    <div>
+     <img src="./images/gift.png" alt="Gift" width="100">
+    </div>
+    <div class="iconDescription center">
+     Elige un <br>
+     producto <br>
+     increíble
+    </div>
+   </div>
+   <div class="column center column is-half-mobile  is-one-quarter-tablet">
+    <div>
+     <img src="./images/box.png" alt="Gift" width="100">
+    </div>
+    <div class="iconDescription center">
+     Completa <br>
+     la información <br>
+     de envío
+    </div>
+   </div>
+
+   <div class="column center column is-half-mobile  is-one-quarter-tablet">
+    <div>
+     <img src="./images/cart.png" alt="Gift" width="100">
+    </div>
+    <div class="iconDescription center">
+     Recibe <br>
+     un link <br>
+     para pago
+    </div>
+   </div>
+   <div class="column center column is-half-mobile  is-one-quarter-tablet">
+    <div>
+     <img src="./images/truck.png" alt="Gift" width="100">
+    </div>
+    <div class="iconDescription center">
+     Relajate <br>
+     mientras<br>
+     lo enviamos
+    </div>
+   </div>
+  </div>
+ </div>
+
+
+ <!--FOOTER-->
+ <footer class="footer">
+  <div class="content has-text-centered">
+   Imprimu, S.A.
+   <br>
+   PH Sortis Business Center #2202, Calle 57 Obarrio
+   <br><br><br>
+   Copyright Imprimu S.A. - 2020
+  </div>
+ </footer>
+
+</body>
+
+<!--CUSTOM FUNCTIONS-->
+<script src="./js/custom.js"></script>
+
+</html>

@@ -1,0 +1,108 @@
+:root {
+    --main-blue: #00ace7;
+    --main-aqua: #5eebd7;
+    --main-pink: #ff0077;
+}
+
+* {
+ font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.center{
+ text-align: center;
+}
+
+.right{
+ text-align: right;
+}
+
+.blueTitle h2{
+ color: var(--main-blue);
+ font-size: 45px;
+ line-height: 50px;
+ font-weight: 800;
+ padding: 50px 0px 60px 0px;
+}
+
+.w100pct{
+ width: 100%;
+}
+
+.aqua{
+ background-repeat: repeat-x;
+ background-image: url("../images/bgAqua.png")
+}
+
+.marginT100{
+ margin-top: 100px;
+}
+
+.marginB100{
+ margin-bottom: 100px;
+}
+
+.aboutUs h2{
+ color: #000000;
+ font-size: 60px;
+ line-height: 64px;
+ font-weight: 900;
+ padding-bottom: 50px;
+}
+
+.aboutUs p{
+ font-size: 26px;
+ line-break: 32px;
+ padding-right: 80px;
+}
+
+.aboutUs{
+ background-color: #ffffff;
+ padding-left: 80px;
+}
+
+.btn-about-us{
+ font-size: 30px;
+ line-height: 34px; 
+ border-radius: 60px;
+ width: 270px;
+}
+
+.facil{
+ padding: 60px 0px 0px 40px;
+}
+
+.howTitle h2{
+ color: var(--main-pink);
+ font-size: 45px;
+ line-height: 50px;
+ font-weight: 800;
+}
+
+.iconDescription{
+ font-size: 22px;
+ line-height: 28px;
+ color: #000000;
+ padding-top: 35px;
+ font-weight: 500;
+}
+
+.icons{
+ background-color: #f8f8f8;
+ padding: 60px 0px 60px 0px;
+}
+
+.footer{
+ margin-top: 60px;
+ background-color: #000000;
+ color: #ffffff;
+}
+
+.header{
+ background-image: url("../images/bgHeader.png");
+ background-repeat: repeat-x;
+ background-size: cover;
+}
+
+.headerColumns{
+ padding: 0px;
+}
